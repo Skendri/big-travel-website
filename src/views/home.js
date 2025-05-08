@@ -8,6 +8,7 @@ import Feature from '../components/feature'
 import Offer from '../components/offer'
 import Location from '../components/location'
 import Guide from '../components/guide'
+import TestimonialsProps from '../components/TestimonialsProps'
 import Article from '../components/article'
 import './home.css'
 
@@ -281,35 +282,37 @@ const Home = (props) => {
           </button>
         </div>
       </section>
+      {/* <!-- customer testimonial--> */}
       <section className="home-testimonials">
-        <div className="home-content12">
+        {/* wrapper div 1 */}
+        <TestimonialsProps/>
+        {/* <div className="home-content12">
           <div className="home-heading12">
             <span className="home-title">Customer testimonial</span>
             <p className="home-quote">
-              “We’ve used Traveler to lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.”
+              {testimonialsProps[0].description}
             </p>
           </div>
           <div className="home-details">
             <div className="home-author">
               <img
                 alt="image"
-                src="/Avatar/quote-200h.png"
+                src={testimonialsProps[0].image}
                 className="home-avatar"
               />
-              <span className="home-name">Michael McDonald</span>
+              <span className="home-name">{testimonialsProps[0].name}</span>
             </div>
             <div className="home-controls">
               <div className="page">
-                <span className="home-text23">&lt;</span>
+                <span className="home-text23" onClick={goPrev}>&lt;</span>
               </div>
               <div className="home-next2 page">
-                <span className="home-text24">&lt;</span>
+                <span className="home-text24" onClick={goNext}>&lt;</span>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        {/* <!-- wrapper div */}
       </section>
       <section id="how-it-works" className="home-highlights">
         <div className="home-highlight1">
