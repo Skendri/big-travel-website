@@ -57,7 +57,7 @@ const testimonialsProps = [
             </div>
   )
 
-  const current = testimonialsProps[currentIndex];
+  // const current = testimonialsProps[currentIndex];
 }
 
-export default testimonialsProps
+export default TestimonialsProps

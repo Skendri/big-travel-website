@@ -8,7 +8,7 @@ import Feature from '../components/feature'
 import Offer from '../components/offer'
 import Location from '../components/location'
 import Guide from '../components/guide'
-import TestimonialsProps from '../components/TestimonialsProps'
+import testimonialsProps from '../components/testimonialsProps'
 import Article from '../components/article'
 import './home.css'
 
