@@ -1,4 +1,5 @@
 
+import React, { useState } from "react";
 const testimonialsProps = [
   {description: `“We’ve used Traveler to lorem ipsum dolor sit amet, consectetur
     adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -22,11 +23,14 @@ const testimonialsProps = [
   const [currentIndex, setCurrentIndex] = useState(0);
   const goNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonialsProps.length);
+    console.log("butoni u klikua");
   }
   
   const goPrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonialsProps.length) % testimonialsProps.length);
+    console.log("butoni u klikua");
   }
+
 
   return (
     <div className="home-content12">
@@ -57,7 +61,7 @@ const testimonialsProps = [
             </div>
   )
 
-  // const current = testimonialsProps[currentIndex];
+  const current = testimonialsProps[currentIndex];
 }
 
-export default TestimonialsProps
+export default testimonialsCarousel

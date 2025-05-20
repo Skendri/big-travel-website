@@ -8,7 +8,7 @@ import Feature from '../components/feature'
 import Offer from '../components/offer'
 import Location from '../components/location'
 import Guide from '../components/guide'
-import testimonialsProps from '../components/testimonialsProps'
+import TestimonialsCarousel from '../components/testimonials-props'
 import Article from '../components/article'
 import './home.css'
 
@@ -285,7 +285,7 @@ const Home = (props) => {
       {/* <!-- customer testimonial--> */}
       <section className="home-testimonials">
         {/* wrapper div 1 */}
-        <TestimonialsProps/>
+        <TestimonialsCarousel>
         {/* <div className="home-content12">
           <div className="home-heading12">
             <span className="home-title">Customer testimonial</span>
@@ -312,6 +312,7 @@ const Home = (props) => {
             </div>
           </div>
         </div> */}
+        </TestimonialsCarousel>
         {/* <!-- wrapper div */}
       </section>
       <section id="how-it-works" className="home-highlights">
