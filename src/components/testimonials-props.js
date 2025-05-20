@@ -19,7 +19,7 @@ const testimonialsProps = [
     },
 ];
 
- function testimonialsCarousel() {
+ function testimonialsCarousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonialsProps.length);
@@ -37,31 +37,31 @@ const testimonialsProps = [
               <div className="home-heading12">
                 <span className="home-title">Customer testimonial</span>
                 <p className="home-quote">
-                  {testimonialsProps[0].description}
+                  {testimonialsProps[currentIndex].description}
                 </p>
               </div>
               <div className="home-details">
                 <div className="home-author">
                   <img
                     alt="image"
-                    src={testimonialsProps[0].image}
+                    src={testimonialsProps[currentIndex].image}
                     className="home-avatar"
                   />
-                  <span className="home-name">{testimonialsProps[0].name}</span>
+                  <span className="home-name">{testimonialsProps[currentIndex].name}</span>
                 </div>
                 <div className="home-controls">
-                  <div className="page">
-                    <span className="home-text23" onClick={goPrev}>&lt;</span>
+                  <div className="page" onClick={goPrev}>
+                    <span className="home-text23" >&lt;</span>
                   </div>
-                  <div className="home-next2 page">
-                    <span className="home-text24" onClick={goNext}>&lt;</span>
+                  <div className="home-next2 page" onClick={goNext}>
+                    <span className="home-text24" >&lt;</span>
                   </div>
                 </div>
               </div>
             </div>
   )
 
-  const current = testimonialsProps[currentIndex];
+  // const current = testimonialsProps[currentIndex];
 }
 
 export default testimonialsCarousel
