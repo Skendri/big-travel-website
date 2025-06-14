@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^7.1.0",
     "dangerous-html": "0.1.13",
     "next": "^12.1.10",
     "package": "^1.0.1",
@@ -35,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "craco": "^0.0.3",
     "react-scripts": "^5.0.1"
   }
